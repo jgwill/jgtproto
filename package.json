@@ -1,0 +1,26 @@
+{
+  "name": "jgtproto",
+  "version": "1.0.0",
+  "description": "A package with various prototype from our CustomGpt and more",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "https://github.com/jgwill/jgtproto#readme",
+  "bugs": {
+    "url": "https://github.com/jgwill/jgtproto/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgwill/jgtproto.git"
+  },
+  "license": "ISC",
+  "author": "Guillaume D Isabelle",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tlid": "^1.1.0"
+  }
+}
