@@ -14,6 +14,14 @@ npm install
 npm run dev
 ```
 
+If you encounter an `ENOSPC` error about file watchers, increase the system
+limit or run Vite with polling:
+
+```bash
+sudo sysctl fs.inotify.max_user_watches=524288
+VITE_FS_WATCH_POLLING=true npm run dev
+```
+
 ## Python Scripts
 
 Example data analysis scripts are placed in `scripts/`. `mfi_plot.py` demonstrates how to plot Money Flow Index signal components using `matplotlib`.
