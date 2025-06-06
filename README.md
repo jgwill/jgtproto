@@ -39,3 +39,30 @@ Python modules under `fts/` outline the seven-step trading process and provide p
 ## Specifications
 
 Design documents live in `specs/`. Each `*.spec.md` describes expectations for upcoming implementations such as database schemas, reinforcement learning agents, and documentation workflows. Contributors should consult these files when adding new features.
+
+## CLI Integration
+
+Use the enhanced CLI to scan and validate signals via `jgtpy` and `jgtml`:
+
+```bash
+# Check environment and install packages if needed
+bash scripts/setup_enhanced_fts.sh
+
+# Run a quick analysis
+python -m fts.cli.jgtpy_jgtml_bridge scan-and-validate --symbol EURUSD --timeframes H1 H4
+```
+
+The CLI outputs analysis results in pretty or JSON formats. See `--help` for options.
+
+## Example Workflow
+
+The `examples/complete_workflow_example.py` script demonstrates how to run the resilient pipeline programmatically:
+
+```bash
+python examples/complete_workflow_example.py
+```
+
+## Version Compatibility
+
+The integration expects specific package versions. A table of tested versions is maintained in the documentation.
+
