@@ -31,3 +31,11 @@ Run with your Python environment:
 ```bash
 python scripts/mfi_plot.py
 ```
+
+## FTS Package Scaffold
+
+Python modules under `fts/` outline the seven-step trading process and provide placeholders for data collection, feature engineering, model training, signal generation, automated execution, and feedback loops. These modules will evolve as new components arrive from the companion repository.
+
+## Specifications
+
+Design documents live in `specs/`. Each `*.spec.md` describes expectations for upcoming implementations such as database schemas, reinforcement learning agents, and documentation workflows. Contributors should consult these files when adding new features.
