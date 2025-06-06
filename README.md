@@ -36,6 +36,8 @@ python scripts/mfi_plot.py
 
 Python modules under `fts/` outline the seven-step trading process and provide placeholders for data collection, feature engineering, model training, signal generation, automated execution, and feedback loops. New subpackages have been prepared for reinforcement learning (`fts/rl`), strategy definitions (`fts/strategies`), and backtesting utilities (`fts/backtest`). Database migrations live under `db/migrations`, while documentation sources sit in `docs/` and tests in `tests/`. Additional packages handle vector similarity search (`fts/vector_db`) and Redis-based caching (`fts/cache`). These modules will evolve as new components arrive from the companion repository.
 
+An asynchronous ingestion layer under `fts/ingestion` collects multiple exchange feeds using `asyncio` and can scale with Ray for higher throughput.
+
 ## Specifications
 
 Design documents live in `specs/`. Each `*.spec.md` describes expectations for upcoming implementations such as database schemas, reinforcement learning agents, and documentation workflows. Contributors should consult these files when adding new features.
