@@ -4,7 +4,7 @@
 Describe how React components and Vite-based tooling from the companion repository will integrate with this project.
 
 ## Expected Deliverables
-- UI modules demonstrating strategy diagrams and intent parsing
+- UI modules demonstrating strategy diagrams and intent parsing (e.g., `IntentStackUI`, `TrendDiagram`)
 - Build configuration under `frontend/`
 - Scripts for development and production builds
 
