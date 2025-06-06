@@ -1,7 +1,12 @@
 # FTS Integration Overview
 
-This repository serves as the main integration point for the Fractal Trading System (FTS). The companion repository will provide detailed implementations for database schemas, reinforcement learning, use cases, documentation, and the 7-step trading process.
+This repository acts as the main integration hub for the Fractal Trading System (FTS). A companion repository will supply concrete implementations such as database schemas and reinforcement learning modules. Incoming contributions should follow the specifications documented here.
 
-Each spec under `specs/` outlines expected deliverables and integration steps for incoming contributions. New code should target the `fts/` Python package and the `frontend/` React app when UI components are involved.
+## Expected Incoming Components
+- Database models and migration scripts
+- Reinforcement learning agents and training pipelines
+- Practical trading strategies and backtests
+- Jupyter Book documentation sources
+- UI components built with React and Vite
 
-Contributors are encouraged to reference these specs and update them as features evolve.
+Each spec under `specs/` describes how these components will slot into the existing scaffold under `fts/` and `frontend/`. Contributors should update the relevant spec when adding new features to keep the integration plan accurate.
