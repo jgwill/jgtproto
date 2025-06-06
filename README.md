@@ -45,7 +45,7 @@ Design documents live in `specs/`. Each `*.spec.md` describes expectations for u
 Use the enhanced CLI to scan and validate signals via `jgtpy` and `jgtml`:
 
 ```bash
-# Check environment and install packages if needed
+# Check environment, install Python and frontend packages
 bash scripts/setup_enhanced_fts.sh
 
 # Run a quick analysis

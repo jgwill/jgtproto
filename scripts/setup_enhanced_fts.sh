@@ -24,4 +24,10 @@ PY
 # Test CLI installation
 python -m fts.cli.jgtpy_jgtml_bridge --help >/dev/null
 
+if command -v npm >/dev/null; then
+    echo "📦 Installing frontend dependencies..."
+    npm --prefix frontend install
+    echo "If you see ENOSPC watcher errors during 'npm run dev', run:\n  sudo sysctl fs.inotify.max_user_watches=524288"
+fi
+
 echo "✨ Setup complete! Try: python -m fts.cli.jgtpy_jgtml_bridge scan-and-validate --symbol EURUSD"
