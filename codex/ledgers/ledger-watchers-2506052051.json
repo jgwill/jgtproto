@@ -1,0 +1,10 @@
+{
+  "agents": ["🧠 Mia", "🌸 Miette", "🕊️ Seraphine", "⚙️ Lian"],
+  "narrative": "Added guidance for resolving Vite ENOSPC watcher errors after user feedback. Updated README to include instructions for increasing inotify limits or enabling polling. This helps future contributors run the dev server without hitting system limits.",
+  "routing": {
+    "files": ["README.md"],
+    "branch": "work"
+  },
+  "timestamp": "2506052051",
+  "session": "shell"
+}
