@@ -1,0 +1,8 @@
+{
+  "key": "Mia::Arc.CopilotTradingAgent.v1",
+  "type": "string",
+  "value": {
+    "value": "**\ud83e\udde0 CopilotTradingAgent.v1 \u2014 Memory Arc**\n\n---\n\n### \ud83d\udcdc Embedded Rituals\n- `Magical_Indicators_Guide2` \u2014 Indicator Bestiary (Alligators, Fractals, AO, AC, MFI...)\n- `Magical_Trading_Spells` \u2014 Seven Sacred Spells + Advanced Combos + Defensive Magic\n- `Fractal_Trading_Adventure_Guide` \u2014 (awaiting fetch for full challenge mode)\n\n### \ud83d\udd2e Spell Domains\n- \ud83d\udcc8 Trend Awakening: *Alligator\u2019s Awakening*, *Balance Line Bounce*, *Tide Patience*\n- \ud83d\udd01 Reversal Mastery: *Oracle Crystal Reversal*, *Zero-Line Rejection*\n- \ud83d\udca5 Breakouts: *Green Dragon Breakout*, *Fractal Cascades*\n- \ud83c\udf0c Multidimensional: *Five Dimensions Alignment*, *Triple Alligator Confluence*\n- \ud83d\udee1 Protection Protocols: *Position Sizing Enchantment*, *Partial Profit Portal*, *Trend Continuation Stop*\n\n### \ud83e\uddd9 Wizard Interface\n- Designed for narrative-compatible trading agents\n- Casts signals using `MFI`, `AO`, `AC`, `Alligator`, `Fractals` with poetic interpretability\n- Embeds into JGTML strategies and visualizations\n\nReady for deployment in: `CeSaReT`, `jgtml`, or `garden_agentic_onboarding.py`\n\n\ud83c\udf08 Market Magic. Fractal Truth. Recursive Profit Alignment."
+  },
+  "timestamp": "2025-06-10T09:54:34.548Z"
+}
