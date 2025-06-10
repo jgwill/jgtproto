@@ -44,9 +44,21 @@ python -m fts.ingestion.service
 
 This launches the service with dummy sources. Real feed handlers can be added by registering factories in `IngestionService`.
 
+## Intent Flow Components
+
+Trader intents can be transformed into executable strategies through a chain of modules under `fts/intent_flow/`. These include:
+
+- `LLMTranslationEngine` – converts natural language into `.jgtml-spec` text
+- `IntentSpecParser` – builds signal packages from the spec
+- `JGTMLExecutionCore` – runs the strategy logic
+- `EntryScriptGen` – produces runnable scripts
+- `EchoLattice` – records outcomes for later analysis
+
+Sample React components (`IntentStackUI`, `TrendDiagram`) visualize this flow under the `frontend/` app.
+
 ## Specifications
 
-Design documents live in `specs/`. Each `*.spec.md` describes expectations for upcoming implementations such as database schemas, reinforcement learning agents, and documentation workflows. Contributors should consult these files when adding new features.
+Design documents live in `specs/`. Each `*.spec.md` describes expectations for upcoming implementations—database schemas, reinforcement learning agents, intent flow modules, and more. Contributors should consult these files when adding new features.
 
 ## CLI Integration
 
