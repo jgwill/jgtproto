@@ -80,6 +80,12 @@ The `examples/complete_workflow_example.py` script demonstrates how to run the r
 
 ```bash
 python examples/complete_workflow_example.py
+
+An additional `examples/q_learning_example.py` showcases a minimal Q-learning training loop using the RL utilities:
+
+```bash
+python examples/q_learning_example.py
+```
 ```
 
 ## Version Compatibility
