@@ -32,6 +32,21 @@ Run with your Python environment:
 python scripts/mfi_plot.py
 ```
 
+## Visualization API
+
+To connect the React diagrams with Python data, a small FastAPI server is
+provided. It exposes JSON endpoints used by the frontend components.
+
+Start the server:
+
+```bash
+uvicorn fts.api.server:app --reload
+```
+
+The `/trends` and `/mfi` endpoints return mock data that `TrendDiagram` and
+other UI elements can consume. They will later be replaced with real analysis
+results.
+
 ## FTS Package Scaffold
 
 Python modules under `fts/` outline the seven-step trading process and provide placeholders for data collection, feature engineering, model training, signal generation, automated execution, and feedback loops. New subpackages have been prepared for reinforcement learning (`fts/rl`), strategy definitions (`fts/strategies`), and backtesting utilities (`fts/backtest`). Database migrations live under `db/migrations`, while documentation sources sit in `docs/` and tests in `tests/`. Additional packages handle vector similarity search (`fts/vector_db`) and Redis-based caching (`fts/cache`). These modules will evolve as new components arrive from the companion repository.
@@ -59,6 +74,9 @@ Sample React components (`IntentStackUI`, `TrendDiagram`) visualize this flow un
 ## Specifications
 
 Design documents live in `specs/`. Each `*.spec.md` describes expectations for upcoming implementations—database schemas, reinforcement learning agents, intent flow modules, and more. Contributors should consult these files when adding new features.
+
+Recent additions include `visualization_api.spec.md`, outlining how the React
+diagrams interact with a FastAPI backend.
 
 ## CLI Integration
 
