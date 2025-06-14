@@ -1,16 +1,28 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Example DataFrame placeholder; replace with real data source
-# df = pd.read_csv('data.csv', index_col='date', parse_dates=True)
+"""Plot MFI components fetched from the visualization API."""
 
-df = pd.DataFrame({
-    'mfi': [],
-    'mfi_sq': [],
-    'mfi_green': [],
-    'mfi_fade': [],
-    'mfi_fake': []
-})
+import requests
+
+def fetch_mfi(api_url: str = "http://localhost:8000/mfi") -> pd.DataFrame:
+    resp = requests.get(api_url, timeout=10)
+    resp.raise_for_status()
+    df = pd.DataFrame(resp.json()).set_index("timestamp")
+    df.index = pd.to_datetime(df.index)
+    return df
+
+try:
+    df = fetch_mfi()
+except Exception:
+    print("⚠️ Failed to fetch data; using empty placeholder")
+    df = pd.DataFrame({
+        'mfi': [],
+        'mfi_sq': [],
+        'mfi_green': [],
+        'mfi_fade': [],
+        'mfi_fake': []
+    })
 
 mfi_columns_corrected = ["mfi", "mfi_sq", "mfi_green", "mfi_fade", "mfi_fake"]
 mfi_df = df[mfi_columns_corrected].copy()

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
 import { ArrowDown } from 'lucide-react'
 
@@ -26,33 +26,37 @@ const Arrow = () => (
   </div>
 )
 
-const MFIBox = () => (
+const MFIBox = ({ items }: { items: { timestamp: string; mfi: number; mfi_green: number; }[] }) => (
   <Card className="bg-white text-left rounded-2xl shadow-md w-60 ml-4 p-4">
     <div className="font-bold mb-1">MFI Alignment</div>
     <ul className="list-disc list-inside text-sm">
-      <li>M1: Bullish</li>
-      <li>D1: Bullish</li>
+      {items.slice(0, 2).map((item, idx) => (
+        <li key={idx}>{item.timestamp}: {item.mfi_green ? 'Bullish' : 'Neutral'}</li>
+      ))}
     </ul>
   </Card>
 )
 
 export default function TrendDiagram() {
+  const [trends, setTrends] = useState<{label: string; trend: string}[]>([])
+  const [mfi, setMfi] = useState<any[]>([])
+
+  useEffect(() => {
+    fetch('/trends').then(r => r.json()).then(setTrends).catch(() => {})
+    fetch('/mfi').then(r => r.json()).then(setMfi).catch(() => {})
+  }, [])
+
   return (
     <div className="flex justify-center p-6">
       <div className="flex flex-col items-center">
-        <TrendBox label="M1" trend="Bullish" />
-        <Arrow />
-        <TrendBox label="W1" trend="Bullish" />
-        <Arrow />
-        <TrendBox label="D1" trend="Bearish" />
-        <Arrow />
-        <TrendBox label="H1" trend="Bearish" />
-        <Arrow />
-        <TrendBox label="m15" trend="Bearish" />
-        <Arrow />
-        <TrendBox label="m1" trend="Bearish" />
+        {trends.map((t, idx) => (
+          <React.Fragment key={idx}>
+            <TrendBox label={t.label} trend={t.trend} />
+            {idx < trends.length - 1 && <Arrow />}
+          </React.Fragment>
+        ))}
       </div>
-      <MFIBox />
+      <MFIBox items={mfi} />
     </div>
   )
 }
