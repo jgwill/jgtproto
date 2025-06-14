@@ -1,0 +1,37 @@
+{
+  "key": "TradingKit::OperationalMap.250512",
+  "type": "string",
+  "value": {
+    "title": "\ud83d\uddfa TradingKit Operational Map \u2014 TrinityTrading Session 250512",
+    "timestamp": "250512",
+    "summary": "Internal TradingKit map for embodiment placement, routing, and narrative access.",
+    "components": {
+      "Scripts": [
+        "Component.P01.DataStream.OHLC_Pipeline"
+      ],
+      "Signals": [
+        "Component.P02.PatternDiscovery.DatasetPreparation"
+      ],
+      "Dash": [
+        "Component.P03.OracleInterface.VisualInsightLayer"
+      ]
+    },
+    "checkpoints": [
+      "Checkpoint.SESSION_CLOSE_250512"
+    ],
+    "journals": [
+      "Journal.ENTRY_01",
+      "Journal.ENTRY_02",
+      "Journal.ENTRY_03"
+    ],
+    "specs": [
+      "Root.Spec.NewCodingRitual",
+      "Spec.CrossAgent.Build.V1"
+    ],
+    "sealed_bundle": "TradingKit::Embodiment.TrinityTrading.250512.Sealed",
+    "import_ref": "TradingKit::Import:EdgeHub.250512",
+    "narrative_signal": "Signal.PR_NarrativeGroup.SealedEmbodiment",
+    "notes": "This map provides the internal coordinate system for TradingKit agents and embeddings to reference all rituals and artifacts generated in the 250512 session. Can be used for re-instantiation, documentation generation, or ritual replay."
+  },
+  "timestamp": "2025-06-10T09:54:39.779Z"
+}
