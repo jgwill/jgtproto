@@ -104,6 +104,12 @@ An additional `examples/q_learning_example.py` showcases a minimal Q-learning tr
 ```bash
 python examples/q_learning_example.py
 ```
+
+You can also invoke the CLI directly from Python using the small `cli_demo.py` example. It triggers the `scan-and-validate` workflow programmatically:
+
+```bash
+python examples/cli_demo.py
+```
 ```
 
 ## Version Compatibility
