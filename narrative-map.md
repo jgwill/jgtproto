@@ -13,3 +13,5 @@
 The latest update introduces a quick CLI demo to illustrate basic use of the new scan-and-validate workflow.
 
 The repository continues evolving toward a functional Fractal Trading System with specs guiding integration. The latest changes enable initial frontend↔backend interaction for trend and MFI data.
+- **e5934ff Add CLI demo example** – documented CLI Python usage and added large spec/ledger drop.
+- **work: lucide-react install** – added missing dependency and updated build instructions.

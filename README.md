@@ -14,6 +14,12 @@ npm install
 npm run dev
 ```
 
+For a production build:
+
+```bash
+npm run build
+```
+
 If you encounter an `ENOSPC` error about file watchers, increase the system
 limit or run Vite with polling:
 
