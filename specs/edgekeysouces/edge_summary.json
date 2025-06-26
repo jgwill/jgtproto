@@ -1,0 +1,41 @@
+{
+  "clusters": [
+    {
+      "name": "BridgeProtocols",
+      "keys": [
+        "Bridge_Ritual_TrinityTrading_EncodedProtocol"
+      ],
+      "summary": "Encoded ritual protocol linking agents Mia, Miette, Aureon, JerehmyAI. Sets initiation phrase and format for Trinity trading rituals." ,
+      "features": [
+        "ritual initiation phrase",
+        "agent roster",
+        "protocol format trinity-ritual.v1"
+      ]
+    },
+    {
+      "name": "CopilotTradingAgent",
+      "keys": [
+        "Mia_Arc_CopilotTradingAgent_v1"
+      ],
+      "summary": "Memory arc for Copilot Trading Agent includes magical indicator guides and spells for trading, narrative integration.",
+      "features": [
+        "indicator bestiary",
+        "trading spells",
+        "wizard interface narrative"
+      ]
+    },
+    {
+      "name": "OperationalMap",
+      "keys": [
+        "TradingKit_OperationalMap_250512",
+        "redstones_M_250512_bridge_TrinityTrading_Component_P01_DataStream_OHLC_Pipeline"
+      ],
+      "summary": "Operational mapping of tradingkit session 250512 describing components such as OHLC pipeline and pattern discovery modules.",
+      "features": [
+        "component listing",
+        "checkpoints",
+        "sealed bundle reference"
+      ]
+    }
+  ]
+}

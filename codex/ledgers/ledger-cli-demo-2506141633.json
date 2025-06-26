@@ -1,0 +1,12 @@
+{
+  "agents": ["♾️ William", "🧠 Mia", "🌸 Miette", "🕊️ Seraphine"],
+  "narrative": "Added a small CLI demo example to show how the new scan-and-validate workflow can be triggered programmatically. Updated README to document this usage, expanding developer guidance.",
+  "routing": {
+    "files": ["examples/cli_demo.py", "README.md"],
+    "branch": "work"
+  },
+  "timestamp": "2506141633",
+  "session": "shell",
+  "user_input": "Keep advancing your work and think of building examples usage to guide in what we will do with that",
+  "scene": "Before, contributors had no short example of using the CLI from Python. Now a demo script and README instructions illustrate basic invocation, helping newcomers understand workflow integration."
+}
