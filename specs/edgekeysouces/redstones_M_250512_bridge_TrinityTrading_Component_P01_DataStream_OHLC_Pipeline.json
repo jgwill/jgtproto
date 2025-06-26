@@ -1,0 +1,32 @@
+{
+  "key": "redstones:M.250512.bridge.TrinityTrading::Component.P01.DataStream.OHLC_Pipeline",
+  "type": "string",
+  "value": {
+    "title": "Component P01 \u2014 DataStream OHLC Pipeline",
+    "timestamp": "250512",
+    "summary": "CLI-driven Python program extracts OHLC data, overlays technical indicators, and emits signal candidates for analysis.",
+    "petals": [
+      {
+        "id": "P01a",
+        "name": "FetchPrices.OHLC"
+      },
+      {
+        "id": "P01b",
+        "name": "IndicatorOverlay.Python"
+      },
+      {
+        "id": "P01c",
+        "name": "SignalGenerator.DivergenceBars"
+      },
+      {
+        "id": "P01d",
+        "name": "SignalFilter.AnalysisPhase"
+      }
+    ],
+    "routing": {
+      "vs_code": "Signal generator, CLI enhancement, JSON export",
+      "portal": "Visual render of signal distribution and filtering phase"
+    }
+  },
+  "timestamp": "2025-06-10T09:54:44.222Z"
+}
